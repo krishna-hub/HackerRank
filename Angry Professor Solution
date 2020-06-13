@@ -1,0 +1,53 @@
+package solutions;
+import java.util.Scanner;
+public class Angry_Proffesor {
+
+	   public static void main(String[] args)
+ {
+	     
+	     Scanner input = new Scanner(System.in);
+	    int  t,run=0 ;
+	    t=input.nextInt();
+	     for(int j=0;j<t;j++)
+	 {           
+	    
+	    int n,count=0;
+	    int treshold;
+	    n = input.nextInt();
+	    treshold=input.nextInt();
+	    int [] students = new int[n];
+	     for(int i=0;i<n;i++)
+	     {
+	         students[i]= input.nextInt();
+	         
+	     }
+	     for(int i=0;i<n;i++)
+	     {
+	         if(students[i]<=0)
+	         {
+	             count++;
+	             
+	         }
+	     }
+	    // System.out.println(count);
+	     
+	       run++;
+	        System.out.println(run);
+	     if(count< treshold)
+	     {
+	         
+	         System.out.print("YES\n");
+	        
+	         
+	     }
+	       
+	     else
+	     {   
+	         System.out.print("NO\n");
+	         
+	     }
+	   
+	     
+	   }
+   }
+}
